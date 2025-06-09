@@ -2,39 +2,32 @@
 
 This script automatically organizes video files by creating a folder with the file's name and moving the video into it. It's ideal for organizing projects, episodes, videos with additional files, and keeping your directory clean without having to manually create folders.
 
-
-
 ## 🧩 How It Works
 
 The script scans all video files in the folder where it is located (.mp4, .avi, .mkv, .mov, .ts) and:
 
-**1. Creates a folder with the file name (without the extension).**
-
-**2. Moves the video into that folder.**
+1. **Creates a folder with the file name (without the extension).**
+2. **Moves the video into that folder.**
 
 This eliminates the repetitive task of creating folders one by one, especially when videos come with subtitles, covers, project files, etc.
 
-
 ## 🛠️ How to Use
 
-**1. Copy the file** `name_script.py` into the folder where your videos are.
-**2. Run the script** using Python:
+1. **Copy the file** `name_script.py` into the folder where your videos are.
+2. **Run the script** using Python:
 
-```bash
-python organize_videos.py
-```
+    ```bash
+    python organize_videos.py
+    ```
 
 ## Requirements
 
-**1. Python 3.x**
+1. **Python 3.x**
+2. **Libraries:**
+   - `os` (for file and directory manipulation)
+   - `shutil` (for moving files)
 
-**2. Libraries:**
-
-- os (for file and directory manipulation)
-
-- shutil (for moving files)
-
-- **No external libraries are required**. The script uses only Python's standard libraries.
+   **No external libraries are required**. The script uses only Python's standard libraries.
 
 ---
 
@@ -48,12 +41,10 @@ python organize_videos.py
 
 ## 📌 Notes
 
-**Supported Extensions**: Only files with the extensions .mp4, .avi, .mkv, .mov, and .ts are considered.
+**Supported Extensions**: Only files with the extensions `.mp4`, `.avi`, `.mkv`, `.mov`, and `.ts` are considered.
 
 - The script must be run in the same folder as the videos to be organized.
-
 - The current video name will be used as a reference to create the folder.
-
 - The script does not overwrite existing files or folders.
 
 ### Developed by João Henrique Sgobero
